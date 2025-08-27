@@ -1,0 +1,22 @@
+{
+  "name": "vocaloid-music-player",
+  "version": "1.0.0",
+  "description": "A simple Vocaloid music player",
+  "main": "src/player.js",
+  "scripts": {
+    "start": "live-server src"
+  },
+  "dependencies": {
+    "howler": "^2.2.3"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1" 
+  },
+  "keywords": [
+    "vocaloid",
+    "music",
+    "player"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
