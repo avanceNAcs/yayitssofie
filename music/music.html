@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Page</title>
+    <link rel="stylesheet" href="/music/music.css">
+    <link rel="stylesheet" href="../navBar/navBar.css">
+</head>
+<body>
+    <!-- Placeholder where navbar will load -->
+    <div id="navbar"></div>
+    <!-- Page content goes here -->
+        <div class="music-player">
+        <h1>Vocaloid Music Player</h1>
+            <input type="file" id="file-input" accept="audio/*" multiple>
+            <div id="track-title">No track loaded</div>
+            <button id="play-button">Play</button>
+            <button id="pause-button">Pause</button>
+            <button id="prev-button">Previous</button>
+            <button id="next-button">Next</button>
+
+    </div>
+    <script src="/music/music.js"></script>
+    <!-- Link to your external JS -->
+    <script src="../navBar/navBar.js"></script>
+</body>
+</html>
