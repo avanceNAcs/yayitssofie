@@ -1,0 +1,87 @@
+/* Full-page background */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("gumi_horizon.jpg"); /* adjust path if needed */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Container with semi-transparent background */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85); /* semi-transparent white */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px); /* optional blur behind container */
+}
+
+/* Headline */
+h1 {
+    text-align: center;
+    color: #222;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3); /* subtle shadow for contrast */
+}
+
+/* Player controls */
+.player-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+button {
+    background-color: #f4ac3d;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+button:hover {
+    background-color: #38d753;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+/* Track info */
+.track-info {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+}
+
+/* Track list */
+.track-list {
+    margin-top: 25px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.track-list li {
+    padding: 12px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    background-color: rgba(255,255,255,0.6);
+    color: #222;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.track-list li:hover {
+    background-color: rgba(244,172,61,0.8);
+    color: white;
+}
