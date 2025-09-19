@@ -55,7 +55,7 @@ nav {
     color: #6ded53;
 }
 
-/* Hamburger button hidden on desktop */
+/* ===== Hamburger Button (hidden on desktop) ===== */
 .nav-toggle {
     display: none;
     background: none;
@@ -71,19 +71,18 @@ nav {
     color: #dfcff3; /* hover color */
 }
 
-/* Responsive: smaller screens */
+/* ===== Responsive (Mobile) ===== */
 @media (max-width: 768px) {
     .nav-toggle {
-        display: block;
-        transition: color 0.3s ease;
+        display: block; /* show hamburger on mobile */
     }
 
-    /* Hide the normal nav links (horizontal) */
+    /* Hide the normal nav links */
     .nav-links {
         display: none;
     }
 
-    /* Sidebar style for nav links when active */
+    /* Sidebar style when active */
     .nav-links.active {
         position: fixed;
         top: 0;
@@ -106,24 +105,11 @@ nav {
         border-bottom: 1px solid #aaa;
     }
 
+    .nav-links li a {
+        color: #514283; /* override default white text for mobile sidebar */
+    }
+
     .nav-links li:nth-child(even) a:hover {
         color: #38d753;
     }
-
-    .nav-close {
-        background: none;
-        border: none;
-        font-size: 2.5rem;
-        color: #514283;
-        cursor: pointer;
-        align-self: flex-end; /* position at the top right of sidebar */
-        margin: 0 1rem 1rem 0;
-        padding: 0;
-        transition: color 0.3s ease;
-    }
-
-    .nav-close:hover {
-        color: #6ded53;
-    }
 }
-
