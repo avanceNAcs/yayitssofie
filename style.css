@@ -1,4 +1,5 @@
 header {
+    grid-area: footer;
     background: #8e44ad;
     color: #fff;
     padding: 2rem 0;
@@ -10,16 +11,42 @@ main {
     text-align: center;
 }
 footer {
+    grid-area: footer;
     background: #eee;
     text-align: center;
     padding: 1rem 0;
     font-size: 0.9rem;
     color: #888;
 }
+aside {
+    grid-area: sidebar;
+    background: #fff1f4;
+}
+main {
+    grid-area: main;
+    background: #ffafc0;
+}
 h1 {
     margin: 0;
 }
-
+.layout {
+    display: grid;
+    grid-template-rows: 60px 60px auto 60px;
+    grid-template-colums: 1fr;
+    grid-template-areas: 'header' 'sidebar' 'main' 'sidebar' 'footer';
+    height: 100vh;
+}
+@media (min-width: 400px){
+    .layout {
+    display: grid;
+    grid-template-rows: 60px auto 60px;
+    grid-template-colums: 160px auto;
+    grid-template-areas: 
+        'header header header' 
+        'sidebar main sidebar'
+        'footer footer footer';
+    }
+}
 /*Calendar Widget*/
 @font-face {
     font-family: "MyFont";
@@ -52,3 +79,5 @@ h1 {
 .line {
     display:block;
 }
+
+
