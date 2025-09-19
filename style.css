@@ -40,7 +40,7 @@ h1 {
     .layout {
     display: grid;
     grid-template-rows: 60px auto 60px;
-    grid-template-colums: 160px auto;
+    grid-template-columns: 160px auto;
     grid-template-areas: 
         'header header header' 
         'sidebar main sidebar'
