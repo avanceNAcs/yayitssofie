@@ -20,7 +20,7 @@ footer {
 }
 aside {
     grid-area: sidebar;
-    background: #fff1f4;
+    background: #d3e7a3;
 }
 main {
     grid-area: main;
@@ -32,7 +32,7 @@ h1 {
 .layout {
     display: grid;
     grid-template-rows: 60px 60px auto 60px;
-    grid-template-colums: 1fr;
+    grid-template-columns: 1fr;
     grid-template-areas: 'header' 'sidebar' 'main' 'sidebar' 'footer';
     height: 100vh;
 }
