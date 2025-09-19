@@ -1,18 +1,38 @@
 # yayitssofie
-Mica Avancena's Website to showcase her skills and projects
-
-# Vocaloid Music Player
+Sofia Avancena's Website to showcase her skills and projects
 
 ## Overview
-The Vocaloid Music Player is a web-based application that allows users to play and manage Vocaloid music tracks. It provides a simple and intuitive interface for listening to your favorite Vocaloid songs.
+yayitssofie is a web-based application that showcases Sofia's interests through her front-end and back-end web development skills.
 
-## Project Structure
+Project Structure
 ```
-vocaloid-music-player
+yayitssofie
 ├── src
-│   ├── music.html        # Main HTML document for the music player
-│   ├── player.js         # JavaScript code for music player functionality
-│   └── styles.css        # CSS styles for the music player interface
+   /project-root/
+   │
+   ├─ index.html
+   ├─ cosplay.html
+   ├─ gameon.html
+   ├─ sceneit.html
+   ├─ tunein.html
+   │
+   ├─ /css/
+   │   ├─ styles.css      ← global styles
+   │   ├─ cosplay.css     ← Cosplay page styles
+   │   ├─ gameon.css      ← GameOn page styles
+   │   ├─ sceneit.css     ← SceneIt page styles
+   │   └─ tunein.css      ← TuneIn page styles
+   │
+   ├─ /js/
+   │   ├─ common.js       ← global JS
+   │   ├─ cosplay.js      ← Cosplay page JS
+   │   ├─ gameon.js       ← GameOn page JS
+   │   ├─ sceneit.js      ← SceneIt page JS
+   │   └─ tunein.js       ← TuneIn page JS
+   │
+   ├─ /images/
+   ├─ /assets/
+   └─ /components/
 ├── package.json          # npm configuration file
 └── README.md             # Project documentation
 ```
